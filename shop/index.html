@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>I ♥ Julia — Official Shirt Shop</title>
+  <meta name="description" content="Tees, ringers, hoodies and crewnecks that say I ♥ Julia. Soft cotton, screen printed, shipped fast.">
+  <meta name="theme-color" content="#d61f3c">
+  <meta property="og:title" content="I ♥ Julia — Official Shirt Shop">
+  <meta property="og:description" content="Wear your heart on your sleeve. Well, your chest.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/shop.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <div class="announce" role="region" aria-label="Announcements">
+    <div class="announce__track" id="announce">
+      <p>Free shipping on orders over $75</p>
+      <p>Use code <strong>JULIA10</strong> for 10% off your first order</p>
+      <p>Free returns within 30 days</p>
+    </div>
+  </div>
+
+  <header class="header" id="header">
+    <div class="header__inner">
+      <button class="icon-btn header__menu" id="menuBtn" aria-label="Open menu" aria-controls="mobileNav" aria-expanded="false">
+        <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <a href="#/" class="logo" aria-label="I heart Julia — home">
+        I <svg class="logo__heart" viewBox="0 0 32 29" aria-hidden="true"><path d="M16 29 2.7 15.6A8.3 8.3 0 0 1 16 4.4a8.3 8.3 0 0 1 13.3 11.2Z"/></svg> JULIA
+      </a>
+      <nav class="nav" aria-label="Main">
+        <a href="#/collections/all">Shop All</a>
+        <a href="#/collections/tees">Tees</a>
+        <a href="#/collections/sweats">Sweats</a>
+        <a href="#/collections/kids">Kids</a>
+        <a href="#/pages/about">Our Story</a>
+      </nav>
+      <div class="header__actions">
+        <button class="icon-btn" id="searchBtn" aria-label="Search">
+          <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="m20 20-3.5-3.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </button>
+        <a class="icon-btn" href="#/account" aria-label="Account">
+          <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><circle cx="12" cy="8" r="4" fill="none" stroke="currentColor" stroke-width="2"/><path d="M4 21a8 8 0 0 1 16 0" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </a>
+        <a class="icon-btn hide-sm" href="#/wishlist" aria-label="Wishlist">
+          <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M12 20.5 4.2 12.8a4.9 4.9 0 0 1 7.8-5.9 4.9 4.9 0 0 1 7.8 5.9Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+          <span class="badge badge--soft" id="wishCount" hidden>0</span>
+        </a>
+        <button class="icon-btn" id="cartBtn" aria-label="Open cart">
+          <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M5 8h14l-1.2 12H6.2Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M9 8V6a3 3 0 0 1 6 0v2" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+          <span class="badge" id="cartCount" hidden>0</span>
+        </button>
+      </div>
+    </div>
+    <form class="searchbar" id="searchBar" role="search" hidden>
+      <div class="searchbar__inner">
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="m20 20-3.5-3.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <input type="search" id="searchInput" placeholder="Search products…" aria-label="Search products" autocomplete="off">
+        <button type="button" class="icon-btn" id="searchClose" aria-label="Close search">✕</button>
+      </div>
+      <div class="searchbar__results" id="searchResults"></div>
+    </form>
+  </header>
+
+  <nav class="mobile-nav" id="mobileNav" aria-label="Mobile" hidden>
+    <div class="mobile-nav__panel">
+      <div class="drawer__head">
+        <span class="drawer__title">Menu</span>
+        <button class="icon-btn" data-close-menu aria-label="Close menu">✕</button>
+      </div>
+      <a href="#/collections/all">Shop All</a>
+      <a href="#/collections/tees">Tees</a>
+      <a href="#/collections/sweats">Sweats</a>
+      <a href="#/collections/kids">Kids</a>
+      <a href="#/wishlist">Wishlist</a>
+      <a href="#/account">Account &amp; Orders</a>
+      <a href="#/pages/about">Our Story</a>
+      <a href="#/pages/faq">FAQ</a>
+      <a href="#/pages/contact">Contact</a>
+    </div>
+  </nav>
+
+  <main id="main" tabindex="-1"></main>
+
+  <section class="newsletter">
+    <div class="container newsletter__inner">
+      <div>
+        <h2>Join the Julia Club</h2>
+        <p>New colors, restocks, and the occasional love letter. No spam, ever.</p>
+      </div>
+      <form id="newsletterForm" class="newsletter__form">
+        <label class="sr-only" for="nlEmail">Email</label>
+        <input id="nlEmail" type="email" required placeholder="you@example.com">
+        <button class="btn btn--light" type="submit">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <a href="#/" class="logo logo--footer">I <svg class="logo__heart" viewBox="0 0 32 29" aria-hidden="true"><path d="M16 29 2.7 15.6A8.3 8.3 0 0 1 16 4.4a8.3 8.3 0 0 1 13.3 11.2Z"/></svg> JULIA</a>
+        <p class="muted">Shirts for people who love Julia. Printed with care, worn with pride.</p>
+      </div>
+      <div>
+        <h3>Shop</h3>
+        <a href="#/collections/all">All products</a>
+        <a href="#/collections/tees">Tees</a>
+        <a href="#/collections/sweats">Sweats</a>
+        <a href="#/collections/kids">Kids</a>
+      </div>
+      <div>
+        <h3>Help</h3>
+        <a href="#/pages/faq">FAQ</a>
+        <a href="#/pages/shipping">Shipping &amp; Returns</a>
+        <a href="#/pages/size-guide">Size Guide</a>
+        <a href="#/pages/contact">Contact</a>
+      </div>
+      <div>
+        <h3>Company</h3>
+        <a href="#/pages/about">Our Story</a>
+        <a href="#/account">Order history</a>
+        <a href="#/pages/terms">Terms</a>
+        <a href="#/pages/privacy">Privacy</a>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <p class="muted">© <span id="year"></span> I ♥ Julia</p>
+      <div class="pay-icons" aria-label="Accepted payment methods">
+        <span>VISA</span><span>MC</span><span>AMEX</span><span>PayPal</span><span> Pay</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Cart drawer -->
+  <div class="overlay" id="overlay" hidden></div>
+  <aside class="drawer" id="cartDrawer" aria-label="Shopping cart" aria-hidden="true">
+    <div class="drawer__head">
+      <span class="drawer__title">Your cart</span>
+      <button class="icon-btn" id="cartClose" aria-label="Close cart">✕</button>
+    </div>
+    <div class="drawer__body" id="cartBody"></div>
+    <div class="drawer__foot" id="cartFoot"></div>
+  </aside>
+
+  <!-- Quick add modal -->
+  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+    <div class="modal__box" id="modalBox"></div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/shop.js"></script>
+</body>
+</html>
